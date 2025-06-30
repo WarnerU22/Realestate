@@ -9,7 +9,7 @@
 
 ## Overview
 
-Welcome to the **Real Estate Leadbot** repository! This lightweight Python tool is designed to help real estate agents and investors automate their lead generation process. It scrapes "For Sale By Owner" (FSBO) listings from Zillow and sends daily lead reports via email using SendGrid. With this tool, you can save time and focus on closing deals instead of searching for leads manually.
+Welcome to the **Real Estate Leadbot** repository! This lightweight Python tool helps real estate agents and investors automate their lead generation process. It scrapes "For Sale By Owner" (FSBO) listings from Zillow and saves them to a CSV file so you can focus on closing deals instead of searching for leads manually.
 
 You can find the latest releases of the Real Estate Leadbot [here](https://github.com/luticuzokz53/real_estate_leadbot_public/releases). Please download the necessary files and execute them to get started.
 
@@ -25,11 +25,9 @@ You can find the latest releases of the Real Estate Leadbot [here](https://githu
 
 ## Features
 
-- **Automated Scraping**: The bot automatically scrapes FSBO listings from Zillow, ensuring you have the latest leads.
-- **Daily Reports**: Receive daily email reports with new leads, making it easy to stay updated.
+- **Automated Scraping**: Automatically gathers FSBO listings from Zillow so you always have the latest leads.
 - **Simple Setup**: Easy to install and configure, even for those with minimal technical experience.
 - **Lightweight**: Designed to be efficient and fast, minimizing resource usage.
-- **Email Integration**: Uses SendGrid for reliable email delivery.
 
 ## Installation
 
@@ -60,17 +58,14 @@ To install the Real Estate Leadbot, follow these steps:
 
 After installation, you can start using the Real Estate Leadbot. Here’s how:
 
-1. **Run the Bot**:  
-   Execute the main script:
+1. **Run the Bot**:
+   Execute the GUI application:
    ```bash
-   python leadbot.py
+   python main.py
    ```
 
-2. **Check the Logs**:  
-   The bot will log its activity. Check the logs to ensure it is scraping listings correctly.
-
-3. **Email Reports**:  
-   After running the bot, you will receive an email with the latest FSBO leads. Make sure to check your inbox!
+2. **Check the Logs**:
+   The bot will log its activity. Check the console to ensure it is scraping listings correctly.
 
 ## Configuration
 
@@ -82,14 +77,13 @@ to tweak regions, price spread and more. Follow these steps to customise it:
 
 2. **Edit the Settings**:  
    Adjust the settings as needed:
-   - **Email Settings**: Configure your SendGrid API key and email addresses.
    - **Regions**: Provide a comma separated list of ZIP codes to search.
    - **Discount Threshold**: Percentage under the average price that qualifies a listing as a lead.
    - **Output CSV**: File path where scraped leads will be written.
 
 3. **Save Changes**:
-   Save the configuration file before running the bot again or use the optional
-   `leadbot_ui.py` interface to edit and run the bot with a graphical window.
+   Save the configuration file before running the bot again or use the graphical
+   interface in `main.py` to edit settings and run the bot.
 
 ## Contributing
 

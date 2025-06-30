@@ -1,12 +1,9 @@
 import json
 
 DEFAULT_CONFIG = {
-    "sendgrid_api_key": "your_api_key_here",
-    "from_email": "you@example.com",
-    "to_email": "you@example.com",
     "regions": ["30058"],
     "discount_threshold": 0.1,
-    "output_csv": "leads.csv"
+    "output_csv": "leads.csv",
 }
 
 
