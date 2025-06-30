@@ -1,4 +1,8 @@
 #!/bin/bash
-cd /root/leadbots
-source venv/bin/activate
-python autopilot_leadbot.py
+# Simple helper script to run the leadbot using the virtual environment if
+# available.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+if [ -d "$DIR/venv" ]; then
+    source "$DIR/venv/bin/activate"
+fi
+python "$DIR/autopilot_leadbot.py"

@@ -74,18 +74,22 @@ After installation, you can start using the Real Estate Leadbot. Here’s how:
 
 ## Configuration
 
-To customize the bot for your needs, you can modify the configuration file. Here’s how:
+The bot now uses a `config.json` file for all of its settings, making it simple
+to tweak regions, price spread and more. Follow these steps to customise it:
 
 1. **Open the Configuration File**:  
    Locate `config.json` in the project directory.
 
 2. **Edit the Settings**:  
    Adjust the settings as needed:
-   - **Email Settings**: Configure your SendGrid API key and email address.
-   - **Scraping Settings**: Set parameters for the scraping process, such as the location and property types.
+   - **Email Settings**: Configure your SendGrid API key and email addresses.
+   - **Regions**: Provide a comma separated list of ZIP codes to search.
+   - **Discount Threshold**: Percentage under the average price that qualifies a listing as a lead.
+   - **Output CSV**: File path where scraped leads will be written.
 
-3. **Save Changes**:  
-   Save the configuration file before running the bot again.
+3. **Save Changes**:
+   Save the configuration file before running the bot again or use the optional
+   `leadbot_ui.py` interface to edit and run the bot with a graphical window.
 
 ## Contributing
 
