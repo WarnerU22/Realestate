@@ -2,6 +2,7 @@ import csv
 
 from config import load_config
 from zillow_scraper import generate_urls, scrape_zillow, filter_under_market
+from mailjet_utils import send_leads_via_mailjet
 
 
 def main():
@@ -25,6 +26,8 @@ def main():
         writer.writerows(filtered)
 
     print(f"[+] Saved leads to {config['output_csv']}")
+
+    send_leads_via_mailjet(filtered, config)
 
 
     # Display the first few leads for convenience

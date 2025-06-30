@@ -1,5 +1,9 @@
 {
     "regions": ["30058"],
     "discount_threshold": 0.1,
-    "output_csv": "leads.csv"
+    "output_csv": "leads.csv",
+    "mailjet_api_key": "",
+    "mailjet_api_secret": "",
+    "mailjet_sender": "",
+    "mailjet_recipient": ""
 }

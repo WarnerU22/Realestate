@@ -28,6 +28,7 @@ You can find the latest releases of the Real Estate Leadbot [here](https://githu
 - **Automated Scraping**: Automatically gathers FSBO listings from Zillow so you always have the latest leads.
 - **Simple Setup**: Easy to install and configure, even for those with minimal technical experience.
 - **Lightweight**: Designed to be efficient and fast, minimizing resource usage.
+- **Mailjet Integration**: Optionally email scraped leads using Mailjet.
 
 ## Installation
 
@@ -80,6 +81,10 @@ to tweak regions, price spread and more. Follow these steps to customise it:
    - **Regions**: Provide a comma separated list of ZIP codes to search.
    - **Discount Threshold**: Percentage under the average price that qualifies a listing as a lead.
    - **Output CSV**: File path where scraped leads will be written.
+   - **Mailjet API Key**: Your Mailjet API key for sending email notifications.
+   - **Mailjet API Secret**: Your Mailjet API secret.
+   - **Mailjet Sender**: The email address Mailjet should send from.
+   - **Mailjet Recipient**: Email address to receive scraped leads.
 
 3. **Save Changes**:
    Save the configuration file before running the bot again or use the graphical
